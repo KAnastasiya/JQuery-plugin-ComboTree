@@ -1,0 +1,32 @@
+{
+  "name": "ComboTree",
+  "version": "1.0.0",
+  "author": "Anastasiia Kozenko",
+  "devDependencies": {
+    "babel-eslint": "*",
+    "babel-loader": "*",
+    "babel-preset-es2015": "*",
+    "browser-sync": "*",
+    "eslint": "*",
+    "eslint-loader": "*",
+    "gulp": "*",
+    "gulp-cache": "*",
+    "gulp-autoprefixer": "*",
+    "gulp-load-plugins": "*",
+    "gulp-notify": "*",
+    "gulp-plumber": "*",
+    "gulp-pug": "*",
+    "gulp-rename": "*",
+    "gulplog": "*",
+    "gulp-stylus": "^2.5.0",
+    "json-loader": "^0.5.4",
+    "vinyl-named": "*",
+    "webpack": "*",
+    "webpack-dev-server": "*",
+    "webpack-hot-middleware": "*",
+    "webpack-stream": "*"
+  },
+  "engines": {
+    "node": "^5.0.0"
+  }
+}

@@ -1,0 +1,193 @@
+@import 'https://fonts.googleapis.com/css?family=Roboto:300,500&subset=cyrillic-ext,latin-ext'
+
+.combotree
+  font 300 14px Roboto
+  color #616161
+  width 100%
+  line-height 1.5
+  box-sizing border-box
+  position relative
+
+  &.open
+    .combotree__btn::after
+      transform translate(50%, -50%) rotate(315deg)
+
+    .combotree__list-wrapper
+      display block
+
+      > .combotree__list
+        display block
+
+        &.hidden
+          display none
+
+        > .combotree__item
+          display block
+
+  &__label
+    color #000
+    display inline-block
+    vertical-align middle
+    width inherit
+    padding 0 5px
+    margin-bottom 5px
+    box-sizing border-box
+
+  &__field
+    position relative
+    width inherit
+
+    &.without-label
+      + .combotree__list-wrapper:not(.openToTop)
+        top 38px
+
+  &__input
+    width inherit
+    min-height 40px
+    padding 0 15px
+    border 1px solid #ddd
+    border-radius 2px
+
+    font 300 14px Roboto
+    box-sizing border-box
+    -webkit-appearance none
+
+    &:active,
+    &:focus
+      border-color #66BB6A
+
+    &:focus
+      outline none
+
+    &::-webkit-input-placeholder
+      color #999
+
+    &::-moz-placeholder
+      color #999
+
+    &:-ms-input-placeholder
+      color #999
+
+  &__btn
+    width 38px
+    height 38px
+    background-color #eee
+    border none
+    box-shadow 0 0 1px #ddd
+    position absolute
+    top 1px
+    right 1px
+    cursor pointer
+
+    &::after
+      content ''
+      width 5px
+      height 5px
+      border 2px solid #999
+      border-left-width 0
+      border-bottom-width 0
+      border-radius 0
+      position absolute
+      top 50%
+      right 50%
+      transform translate(50%, -50%) rotate(135deg)
+
+    &:hover
+      background-color darken(#eee, 4%)
+
+    &:active,
+    &:focus
+      background-color darken(#eee, 6%)
+
+    &:focus
+      outline none
+
+  &__list-wrapper
+    display none
+    width inherit
+    background-color #fff
+    overflow auto
+    padding 10px
+    margin 0
+    border 1px solid #ddd
+    border-radius 2px
+    box-shadow 2px 2px 8px #ddd
+
+    position absolute
+    top 64px
+
+    list-style none
+    box-sizing border-box
+    z-index 500
+
+    &.openToTop
+      top initial
+      bottom 38px
+      box-shadow -2px -2px 8px #ddd
+
+  &__list
+    display none
+    list-style none
+    padding 5px 0 0 15px
+    margin 0
+    box-sizing border-box
+
+    &.open
+      display block
+
+  &__item
+    display none
+    min-height 25px
+    font-weight 500
+    position relative
+    box-sizing border-box
+    cursor pointer
+
+    &::before
+      content '▸'
+      width 20px
+      height 20px
+      font-size 16px
+      text-align center
+      position absolute
+      top 0
+      left -20px
+
+    &.open
+      &::before
+        transform rotate(90deg)
+
+      > .combotree__list
+        display block
+
+        > .combotree__item
+          display block
+
+    &.search-result
+      color #66BB6A
+
+    &.hidden
+      display none !important
+
+  &__item_last-level
+    font-weight 300
+
+    &::before
+      content '•'
+      width 20px
+      height 20px
+      font-size 21px
+      text-align center
+      position absolute
+      top -3px
+      left -20px
+
+    &:hover
+      color #999
+
+    &.hidden
+      display none !important
+
+  &__search_no-result
+    font-size 14px
+    margin 0
