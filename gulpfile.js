@@ -5,7 +5,7 @@ const webpack = require('webpack-stream');
 const named = require('vinyl-named');
 const plugins = require('gulp-load-plugins')();
 
-const publicDir = './public';
+const publicDir = './';
 
 
 gulp.task('browserSync', () => {
