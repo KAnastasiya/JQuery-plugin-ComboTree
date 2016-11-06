@@ -23,7 +23,7 @@ gulp.task('pug', () => {
   gulp
   .src(['./src/*.pug'])
   .pipe(plugins.plumber({ errorHandler: plugins.notify.onError() }))
-  .pipe(plugins.pug())
+  .pipe(plugins.pug( {pretty: true} ))
   .pipe(gulp.dest(publicDir));
 });
 
