@@ -1,1 +1,1 @@
-Демо доступно по адресу https://kanastasiya.github.io/JQuery-plugin-ComboTree/
+Демо доступно по адресу http://kanastasiya.github.io/JQuery-plugin-ComboTree
