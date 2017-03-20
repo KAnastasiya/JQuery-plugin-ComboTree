@@ -1,7 +1,7 @@
 ## JQuery Plugin 'ComboTree'
 
 Плагин позволяет сделать из любого div-элемента категоризированный выпадающий список с поддержкой поиска.
-Демо доступно по адресу http://kanastasiya.github.io/JQuery-plugin-ComboTree
+Демо доступно по адресу [JQuery Plugin 'ComboTree'](http://kanastasiya.github.io/JQuery-plugin-ComboTree).
 
 #### Подключение плагина
 1. Подключить стили плагина, т.е. добавить в секции head строку `<link href="jquery.combotree.min.css" rel="stylesheet">`
